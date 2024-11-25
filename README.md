@@ -46,6 +46,45 @@ python advanced-image-processing.py --input saved/high_res_image.png
 python nst.py --content saved/high_res_image.png --style style_images/artistic_style.jpg
 ```
 
+This project is built based on the **ESRGAN research paper**, which extends upon SRGAN by introducing **Residual-in-Residual Dense Blocks (RRDB)** and other advanced techniques like **relativistic adversarial loss**. Check out the original ESRGAN paper for a deeper understanding, but here we’ll focus on the **model architecture** and how to implement it.
+
+---
+
+## 🚀 Features
+
+- **ESRGAN Model from Scratch**: Fully implemented ESRGAN generator and discriminator models using PyTorch.
+- **Advanced Blocks**: Incorporates **RRDB** for better image super-resolution.
+- **Pre-Trained Weights**: Load and use official pre-trained weights without retraining.
+- **Efficient Upsampling**: Uses **nearest-neighbor upsampling** instead of pixel shuffle.
+- **Highly Configurable**: Modify number of channels, layers, and upsampling factors easily.
+
+## Neural Style Transfer Background
+
+Neural Style Transfer, introduced by Gatys et al. in 2015, is a deep learning technique that enables artistic image transformation using pre-trained convolutional neural networks (specifically VGG19).
+
+### Key Principles
+- Separates content and style representations from images
+- Uses intermediate layers of VGG19 to extract features
+- Recombines features to create stylized images
+- Preserves original image structure while applying artistic styles
+
+### Technical Approach
+- Content representation: Captures image structure
+- Style representation: Extracts texture and color patterns
+- Optimization process minimizes content and style loss functions
+
+### Implementation Challenges
+- Balancing content preservation
+- Preventing over-stylization
+- Managing computational complexity
+
+### Research Paper
+- Title: "A Neural Algorithm of Artistic Style"
+- Authors: Leon A. Gatys et al.
+- Published: 2015
+- Key Contribution: Demonstrated deep learning's potential in artistic image transformation
+
+
 ## Real-World Applications
 - Digital content creation
 - Artistic design
