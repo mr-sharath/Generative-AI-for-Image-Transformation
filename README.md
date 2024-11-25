@@ -46,17 +46,28 @@ python advanced-image-processing.py --input saved/high_res_image.png
 python nst.py --content saved/high_res_image.png --style style_images/artistic_style.jpg
 ```
 
-This project is built based on the **ESRGAN research paper**, which extends upon SRGAN by introducing **Residual-in-Residual Dense Blocks (RRDB)** and other advanced techniques like **relativistic adversarial loss**. Check out the original ESRGAN paper for a deeper understanding, but here we’ll focus on the **model architecture** and how to implement it.
+## ESRGAN Background
 
----
+### Key Features
+- Enhanced Super-Resolution Generative Adversarial Network
+- Extends SRGAN with Residual-in-Residual Dense Blocks (RRDB)
+- Advanced image upscaling technique
 
-## 🚀 Features
+### Technical Innovations
+- Improves image clarity and detail preservation
+- Uses adversarial training for realistic super-resolution
+- Introduces relativistic adversarial loss
 
-- **ESRGAN Model from Scratch**: Fully implemented ESRGAN generator and discriminator models using PyTorch.
-- **Advanced Blocks**: Incorporates **RRDB** for better image super-resolution.
-- **Pre-Trained Weights**: Load and use official pre-trained weights without retraining.
-- **Efficient Upsampling**: Uses **nearest-neighbor upsampling** instead of pixel shuffle.
-- **Highly Configurable**: Modify number of channels, layers, and upsampling factors easily.
+### Implementation Highlights
+- Upscales low-resolution images (e.g., 128x128 to 512x512)
+- Maintains image texture and structural integrity
+- Reduces artifacts common in traditional upscaling methods
+
+### Research Paper
+- Title: "ESRGAN: Enhanced Super-Resolution Generative Adversarial Networks"
+- Authors: Xintao Wang et al.
+- Published: 2018
+- Key Contribution: Advanced deep learning approach to image super-resolution
 
 ## Neural Style Transfer Background
 
