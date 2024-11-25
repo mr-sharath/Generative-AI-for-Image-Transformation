@@ -1,4 +1,4 @@
-# 🎨 Generative AI Image Transformation Pipeline
+# 🎨 From pixels to Masterpieces : Generative AI Image Transformation Pipeline
 
 ## Project Overview
 
